@@ -15,6 +15,9 @@
 		8D0458EE1BD0FCEF007686B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0458EC1BD0FCEF007686B8 /* LaunchScreen.storyboard */; };
 		8D0458F91BD0FCEF007686B8 /* TinyPixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0458F81BD0FCEF007686B8 /* TinyPixTests.swift */; };
 		8D0459041BD0FCEF007686B8 /* TinyPixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0459031BD0FCEF007686B8 /* TinyPixUITests.swift */; };
+		8D0459121BD0FD3E007686B8 /* TinyPixDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0459111BD0FD3E007686B8 /* TinyPixDocument.swift */; settings = {ASSET_TAGS = (); }; };
+		8D0459141BD10C53007686B8 /* TinyPixUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0459131BD10C53007686B8 /* TinyPixUtils.swift */; settings = {ASSET_TAGS = (); }; };
+		8D0459161BD325E9007686B8 /* TinyPixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0459151BD325E9007686B8 /* TinyPixView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		8D0458FF1BD0FCEF007686B8 /* TinyPixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyPixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0459031BD0FCEF007686B8 /* TinyPixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyPixUITests.swift; sourceTree = "<group>"; };
 		8D0459051BD0FCEF007686B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0459111BD0FD3E007686B8 /* TinyPixDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyPixDocument.swift; sourceTree = "<group>"; };
+		8D0459131BD10C53007686B8 /* TinyPixUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyPixUtils.swift; sourceTree = "<group>"; };
+		8D0459151BD325E9007686B8 /* TinyPixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyPixView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				8D0458EA1BD0FCEF007686B8 /* Assets.xcassets */,
 				8D0458EC1BD0FCEF007686B8 /* LaunchScreen.storyboard */,
 				8D0458EF1BD0FCEF007686B8 /* Info.plist */,
+				8D0459111BD0FD3E007686B8 /* TinyPixDocument.swift */,
+				8D0459131BD10C53007686B8 /* TinyPixUtils.swift */,
+				8D0459151BD325E9007686B8 /* TinyPixView.swift */,
 			);
 			path = TinyPix;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 				TargetAttributes = {
 					8D0458DD1BD0FCEF007686B8 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = Y8SW87HD9M;
 					};
 					8D0458F31BD0FCEF007686B8 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -258,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0459121BD0FD3E007686B8 /* TinyPixDocument.swift in Sources */,
 				8D0458E61BD0FCEF007686B8 /* DetailViewController.swift in Sources */,
+				8D0459161BD325E9007686B8 /* TinyPixView.swift in Sources */,
+				8D0459141BD10C53007686B8 /* TinyPixUtils.swift in Sources */,
 				8D0458E41BD0FCEF007686B8 /* MasterViewController.swift in Sources */,
 				8D0458E21BD0FCEF007686B8 /* AppDelegate.swift in Sources */,
 			);
@@ -402,9 +415,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TinyPix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.ccm.TinyPix;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luckyCo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -413,9 +427,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TinyPix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.ccm.TinyPix;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luckyCo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
